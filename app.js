@@ -17,6 +17,11 @@ addButton.addEventListener('click', () => {
         return;
     }
 
+    if (friends.includes(name)) {
+        alert('El nombre ya está en la lista, por favor ingresa un nombre diferente.');
+        return;
+    }
+
     // Agregar nombre a la lista y limpiar el campo de entrada
     friends.push(name);
     inputField.value = '';
